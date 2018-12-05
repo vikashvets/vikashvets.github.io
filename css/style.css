@@ -1,0 +1,103 @@
+body {
+  font-family: "Brandon Grotesque", sans-serif;
+  margin: 0px; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 10px; }
+
+ul {
+  list-style-type: none;
+  margin-left: -40px; }
+
+li {
+  display: inline-flex; }
+
+a {
+  text-decoration: none; }
+
+.wrap {
+  width: 315px;
+  margin: 0 auto; }
+  @media screen and (min-width: 375px) {
+    .wrap {
+      width: 370px; } }
+  @media screen and (min-width: 425px) {
+    .wrap {
+      width: 420px; } }
+  @media screen and (min-width: 768px) {
+    .wrap {
+      width: 750px; } }
+  @media screen and (min-width: 1024px) {
+    .wrap {
+      width: 940px; } }
+
+.my-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center; }
+
+.my-col-4 {
+  width: 100%;
+  display: inline-flex; }
+  @media screen and (min-width: 768px) {
+    .my-col-4 {
+      width: 33%; } }
+  @media screen and (min-width: 1024px) {
+    .my-col-4 {
+      width: 33%; } }
+
+.my-col-8 {
+  width: 66%;
+  flex-flow: column;
+  display: inline-flex; }
+
+.my-col-6 {
+  width: 100%;
+  flex-flow: column;
+  display: inline-flex; }
+  @media screen and (min-width: 768px) {
+    .my-col-6 {
+      width: 50%; } }
+  @media screen and (min-width: 1024px) {
+    .my-col-6 {
+      width: 50%; } }
+
+.incent {
+  align-items: center;
+  justify-content: space-around; }
+
+.flow_column {
+  flex-flow: column; }
+  @media screen and (min-width: 768px) {
+    .flow_column {
+      flex-flow: row; } }
+  @media screen and (min-width: 1024px) {
+    .flow_column {
+      flex-flow: row; } }
+
+.hiden_e {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .hiden_e {
+      display: inline-flex; } }
+  @media screen and (min-width: 1024px) {
+    .hiden_e {
+      display: inline-flex; } }
+
+.my-col-3 {
+  flex-flow: column;
+  display: inline-flex;
+  width: 100%; }
+  .my-col-3 a {
+    display: inline-flex; }
+    .my-col-3 a img {
+      margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .my-col-3 {
+      justify-content: space-around;
+      width: 25%; } }
+  @media screen and (min-width: 1024px) {
+    .my-col-3 {
+      justify-content: space-around;
+      width: 25%; } }
