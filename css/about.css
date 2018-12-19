@@ -33,5 +33,5 @@
   .person-list {
     padding: 50px 0; }
 
-.nav-a:hover {
+.nav-a:hover, .links a:hover {
   background-color: rgba(77, 63, 75, 0.8); }

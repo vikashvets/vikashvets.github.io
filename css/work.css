@@ -92,5 +92,5 @@
 .pad-n {
   margin-top: 15px; }
 
-.nav-a:hover {
+.nav-a:hover, .links a:hover {
   background-color: rgba(161, 202, 108, 0.7); }
