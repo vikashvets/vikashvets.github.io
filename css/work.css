@@ -1,0 +1,96 @@
+.work {
+  background: #81a256 url("../img/bg-work.png") no-repeat center;
+  background-size: cover;
+  min-height: 100vh; }
+  .work-photo {
+    height: 220px; }
+  .work-photo-hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    flex-flow: column;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .3s;
+    width: calc(100% - 30px);
+    height: 220px;
+    background-color: rgba(61, 77, 41, 0.7);
+    text-align: center; }
+  .work-item {
+    width: 100%;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.8); }
+    .work-item:hover .work-photo-hover {
+      opacity: 1; }
+    .work-item img {
+      width: 100%;
+      height: 220px;
+      z-index: 10; }
+    .work-item .desc {
+      padding-top: 10px;
+      color: #727272;
+      text-transform: uppercase; }
+  .work .triangle {
+    position: relative;
+    bottom: 19px;
+    display: block;
+    width: 37px;
+    height: 19px;
+    margin: 0 auto; }
+  .work-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    margin-top: 30px;
+    border-top: 1px solid #94b963;
+    border-bottom: 1px solid #94b963; }
+  .work-list {
+    display: inline-flex;
+    align-items: center; }
+    @media only screen and (max-width: 767px) {
+      .work-list {
+        flex-flow: column; } }
+    .work-list li {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center; }
+      .work-list li a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 35px; }
+      .work-list li:hover, .work-list li active {
+        border-radius: 10px;
+        transition: .3s;
+        background-color: #f5c149; }
+
+.plus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  font: 300 48px 'Lato', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  color: #ffffff; }
+  .plus:hover {
+    transition: .3s;
+    background-color: rgba(255, 255, 255, 0.6); }
+
+.works {
+  padding-top: 20px;
+  padding-bottom: 50px; }
+
+.pad-n {
+  margin-top: 15px; }
+
+.nav-a:hover {
+  background-color: rgba(161, 202, 108, 0.7); }

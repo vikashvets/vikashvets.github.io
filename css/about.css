@@ -1,0 +1,37 @@
+.person {
+  background: #665464 url("../img/bg-about.png") no-repeat center;
+  background-size: cover;
+  min-height: 100vh; }
+  .person .meet {
+    height: 65px;
+    display: block;
+    margin-top: 50px;
+    line-height: 50px;
+    background: url("../img/msg.png") center no-repeat; }
+  .person-photo {
+    width: 155px;
+    height: 155px;
+    display: block;
+    margin: 0 auto;
+    background-image: url("../img/person.png");
+    background-size: 100%; }
+  .person-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 400px;
+    flex-flow: column;
+    margin-top: 15px;
+    background-color: rgba(77, 63, 75, 0.8); }
+    .person-item:hover .person-photo {
+      transition: .3s;
+      background-image: url("../img/person-hover.png"); }
+    .person-item:hover .desc-name {
+      color: #b24a50;
+      transition: .3s; }
+  .person-list {
+    padding: 50px 0; }
+
+.nav-a:hover {
+  background-color: rgba(77, 63, 75, 0.8); }

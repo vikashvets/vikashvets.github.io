@@ -1,0 +1,44 @@
+.services {
+  background: #b24a50 url("../img/bg-services.png") no-repeat center;
+  background-size: cover;
+  min-height: 100vh; }
+  .services-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 400px;
+    flex-flow: column;
+    margin-top: 15px;
+    background-color: rgba(200, 83, 90, 0.8); }
+    .services-item:hover img {
+      transition: .3s;
+      filter: grayscale(90%); }
+    .services-item img {
+      display: block;
+      margin: 20px auto 0 auto; }
+  .services-list {
+    padding: 90px 0; }
+
+h3 {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font: 300 30px/58px 'Lato', sans-serif; }
+
+.desc {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font: 400 14px/20px "Lato", sans-serif; }
+
+.special {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font: 400 20px 'Lato', sans-serif; }
+  .special-span {
+    color: #ffcccf; }
+
+.nav-a:hover, .links a:hover {
+  background-color: rgba(200, 83, 90, 0.8); }
