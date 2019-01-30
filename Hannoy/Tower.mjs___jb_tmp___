@@ -1,0 +1,63 @@
+'use strict';
+
+export class Tower {
+
+    constructor(name, num, count) {
+        this.name = name;
+        this.num = num;
+        this.count = count;
+        this.items = [];
+        this.x = this.num * 200;
+        this.y = 50;
+    }
+
+    renderTower() {
+        this.tower = document.createElement("DIV");
+        this.tower.className = "tower droppable";
+        this.tower.style.width = '10px';
+        this.tower.style.height = (this.count * 50) + 'px';
+        document.body.appendChild(this.tower);
+        this.tower.style.left = (this.x - 5) + 'px';
+        this.tower.style.top = this.y + 'px';
+    }
+
+    addItem(item) {
+        if(this.checkEnableAdd(item.size)) {
+            this.items.push(item);
+            return {x: this.x, y: (this.y + (this.count - this.items.length) * 50)};
+        }
+        return false;
+    }
+
+    hasItem(item) {
+        for(let i = 0;i < this.items.length; i++) {
+            console.log(this.items[i].name + ' vs ' + item.name);
+            if(this.items[i].name === item.name) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    removeItem() {
+        if(this.items.length > 1){
+            this.items.splice(-1, 1);
+        } else {
+            this.items = [];
+        }
+    }
+
+    getLastSize() {
+        return this.items.length > 0 ? (this.items[this.items.length - 1].size) : 0;
+
+    }
+
+    checkEnableAdd(newSize) {
+        let last = this.getLastSize();
+        if(last) {
+            console.log('last = ' + last);
+            console.log('new = ' + newSize);
+        }
+        return last ? (newSize <= last) : true;
+    }
+}
